@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "kaufapp"
+    }
+  },
+  "defaultProject": "kaufapp",
+  "cli": {
+    "analytics": "68d40b51-9549-438e-b0a2-18f155e07d41"
+  }
 }

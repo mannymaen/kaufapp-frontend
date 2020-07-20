@@ -1,1 +1,39 @@
-<p>login works!</p>
+<nav class="navbar navbar-dark bg-dark mb-5">
+    <span class="navbar-brand">KAUFAPP</span>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-9 col-md-6 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <h2>Login</h2>
+                    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input
+                                type="text" 
+                                class="form-control"
+                                formControlName="email">
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input 
+                                type="password" 
+                                class="form-control"
+                                formControlName="password">
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <button
+                                    type="submit"
+                                    class="btn btn-success float-right">
+                                    Sign in
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

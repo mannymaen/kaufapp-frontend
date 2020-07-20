@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "fla-chat": {
+      "hosting": {
+        "kaufapp": [
+          "fla-chat"
+        ]
+      }
+    }
+  }
+}

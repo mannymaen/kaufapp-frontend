@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { LayoutRoutingModule } from './layout-routing.module';
+import { NavbarModule } from './navbar/navbar.module';
 import { LayoutComponent } from './layout.component';
 
 
@@ -9,7 +10,8 @@ import { LayoutComponent } from './layout.component';
   declarations: [LayoutComponent],
   imports: [
     CommonModule,
-    LayoutRoutingModule
+    LayoutRoutingModule,
+    NavbarModule
   ]
 })
 export class LayoutModule { }

@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { MatSnackBar, MatSnackBarHorizontalPosition, MatSnackBarVerticalPosition } from '@angular/material/snack-bar';
 import { Observable } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-login',
@@ -18,7 +19,8 @@ export class LoginComponent implements OnInit {
     
     constructor(
         private as: AuthService,
-        private snackBar: MatSnackBar
+        private snackBar: MatSnackBar,
+        private router: Router
     ) { }
     
     ngOnInit(): void {
@@ -37,7 +39,9 @@ export class LoginComponent implements OnInit {
         this.as.login(this.loginForm.value)
         .then((data: Observable<User>) => {
             data.subscribe((data) => {
-                console.log(data.name);
+                this.router.navigate([
+                    'dashboard'
+                ]);
             });
         }).catch(error => {
             this.openSnack(error);

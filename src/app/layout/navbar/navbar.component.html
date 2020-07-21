@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
+    <span class="navbar-brand">KAUFAPP</span>
+    <div class="btn-group" dropdown>
+        <button 
+            id="profile-button" 
+            dropdownToggle 
+            type="button" 
+            class="btn btn-secondary dropdown-toggle">
+            Manny <span class="caret"></span>
+        </button>
+        <ul id="profile-dropdown" *dropdownMenu class="dropdown-menu">
+            <li>
+                <a class="dropdown-item" (click)="logout()">logout</a>
+            </li>
+        </ul>
+    </div>
+</nav>

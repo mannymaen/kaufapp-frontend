@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AngularFireModule } from '@angular/fire';
 import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
     declarations: [
@@ -14,7 +15,8 @@ import { environment } from '../environments/environment';
         BrowserModule,
         BrowserAnimationsModule,
         AppRoutingModule,
-        AngularFireModule.initializeApp(environment.firebase)
+        AngularFireModule.initializeApp(environment.firebase),
+        FontAwesomeModule
     ],
     providers: [
         
